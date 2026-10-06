@@ -1,0 +1,13 @@
+{
+  "name": "flook-dogfood",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Disposable public repo for live Flook product-owner council validation",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
