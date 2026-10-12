@@ -34,3 +34,8 @@ test("returns the shared bound when min equals max", () => {
   assert.equal(clamp(5, 3, 3), 3);
   assert.equal(clamp(3, 3, 3), 3);
 });
+
+test("throws a RangeError when the lower bound exceeds the upper bound", () => {
+  assert.throws(() => clamp(5, 10, 0), RangeError);
+  assert.throws(() => clamp(0, 1, -1), RangeError);
+});
